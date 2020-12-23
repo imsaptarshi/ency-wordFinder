@@ -1,0 +1,21 @@
+{
+    "name": "Ency",
+    "version": "1.0",
+    "description": "Learn new words everyday ...",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    }
+}
