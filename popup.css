@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
+.primary-font {
+  font-family: Poppins;
+}
+
+body {
+  width: 300px;
+  color:#3E3E3E;
+}
+
+#word_of_the_day{
+	text-transform: capitalize;
+}
+
+.green{
+	color:#50E59E;
+}
+
+.bg-green{
+	background-color: #50E59E
+}
+
+.gray{
+	color:#757575;
+}

@@ -2,7 +2,10 @@
     "name": "Ency",
     "version": "1.0",
     "description": "Learn new words everyday ...",
-    "manifest_version": 3,
+    "manifest_version": 2,
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
     "content_scripts": [
         {
             "matches": [

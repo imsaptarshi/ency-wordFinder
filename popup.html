@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ency</title>
+    <link rel="stylesheet" href="./popup.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="p-5">
+        <header class="flex">
+            <div class="circle h-8 w-8 bg-green rounded-full mr-3"></div>
+            <h1 class="primary-font text-xl">ency.</h1>
+        </header>
+    </div>
+    <hr />
+    <div class="p-5 w-full text-center">
+        <h3 class="primary-font text-2xl mb-3">
+            <span class="primary-font text-2xl green underline">Word </span>of the day.
+        </h3>
+        <div class="text-left">
+            <img class="inline mr-3 mb-2" src="./assets/speaker.svg">
+            <span class="primary-font text-xl" id="word_of_the_day">__</span>
+            <br/>
+            <span class="primary-font text-base gray ml-10" id="pronunciation">__</span>
+        </div>
+    </div>
+    <script src="./popup.js"></script>
+</body>
+
+</html>
