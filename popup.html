@@ -15,16 +15,26 @@
         </header>
     </div>
     <hr />
-    <div class="p-5 w-full text-center">
+    <div class="dict overflow-y-scroll p-5 w-full text-center">
         <h3 class="primary-font text-2xl mb-3">
-            <span class="primary-font text-2xl green underline">Word </span>of the day.
+            <span class="primary-font text-2xl green">Word </span>of the day.
         </h3>
         <div class="text-left">
-            <img class="inline mr-3 mb-2" src="./assets/speaker.svg">
+            <img class="inline mr-3 mb-2 cursor-pointer" src="./assets/speaker.svg" id="play">
+            <audio id="audio" src=""></audio>
             <span class="primary-font text-xl" id="word_of_the_day">__</span>
             <br/>
             <span class="primary-font text-base gray ml-10" id="pronunciation">__</span>
+            <div class="secondary-font mt-5" id="meanings">
+                __
+            </div>
         </div>
+    </div>
+    <hr />
+    <div class="p-5 primary-font flex justify-between">
+        <a href="https://github.com/saptarshibasu15/ency"><img class="social" src="./assets/github.svg" alt="github"/></a>
+        <a href="https://dev.to/saptarshibasu15"><img class="social" src="./assets/dev.svg" alt="dev.to"/></a>
+        <a href="https://www.instagram.com/codingverse/?hl=en"><img class="social" src="./assets/insta.svg" alt="instagram"/></a>
     </div>
     <script src="./popup.js"></script>
 </body>

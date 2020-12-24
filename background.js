@@ -1,1 +1,0 @@
-//for browser actions

@@ -1,11 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 .primary-font {
   font-family: Poppins;
 }
 
 body {
-  width: 300px;
+  width: 320px;
   color:#3E3E3E;
 }
 
@@ -24,3 +23,15 @@ body {
 .gray{
 	color:#757575;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+.secondary-font {
+	font-family: Poppins;
+	font-weight: 100;
+}
+
+.dict{
+	max-height: 400px;
+}
+
