@@ -30,7 +30,7 @@ document.addEventListener("dblclick",function(){
 	overflow-y:scroll;`
 
 	const component=`
-	<div id="dict" style="${dict_modal_style}">
+	<div id="dictid" class="dict" style="${dict_modal_style}">
 		<div class="">
             <img class="" style="margin-right:0.75rem; transform: translateY(5px);" src="https://drive.google.com/uc?export=view&id=1bG3fnvt-_NUFNwfngBJ4nr4AJrczx_LP" id="play-ency">
             <audio id="audio-ency" src=""></audio>
@@ -46,8 +46,11 @@ document.addEventListener("dblclick",function(){
 		document.body.innerHTML=component+document.body.innerHTML;
 		getDictionary(query);
 	}
-	document.getElementById('dict').addEventListener("mouseleave",function(){
-		document.getElementById('dict').remove();
+	document.getElementById('dictid').addEventListener("mouseleave",function(){
+		const els=document.getElementsByClassName('dict');
+		for(var i=0;i<els.length;i++){
+			els[i].hidden=true;
+		}
 	})
 	
 })
@@ -80,8 +83,8 @@ function getDictionary(query){
 			}
 			for(var j=0;j<res[0].meanings[i].definitions.length;j++){
 				components+=`
-				<span class="text-sm" style="font-size:0.875rem;">${j+1}. ${res[0].meanings[i].definitions[j].definition}</span><br/>
-				<span class="text-sm gray" style="font-size:0.875;color:#757575;">"${res[0].meanings[i].definitions[j].example?res[0].meanings[i].definitions[j].example:""}"</span><br/><br/>`
+				<span class="" style="font-size:0.875rem;">${j+1}. ${res[0].meanings[i].definitions[j].definition}</span><br/>
+				<span class="" style="font-size:0.875rem;color:#757575;">"${res[0].meanings[i].definitions[j].example?res[0].meanings[i].definitions[j].example:""}"</span><br/><br/>`
 			}
 			components+="</div>"
 		}
